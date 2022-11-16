@@ -1,0 +1,102 @@
+.nav {
+    display: flex;
+    position: sticky;
+      top: 0;
+    justify-content: space-between;
+    padding: 0.9rem 2rem;
+    background: white;
+    box-shadow: 1px 2px 2px rgb(150, 150, 150);
+    color: #2e475d;
+  }
+  /* navlog0 css */
+  .navlogo {
+    text-decoration: none;
+    color: #2e475d;
+    font-style: oblique;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-size: 1.6rem;
+  }
+ .navrow nav ul {
+    margin: 0;
+    padding: 0;
+  }
+ .navrow nav li {
+    list-style: none;
+  }
+ .navrow nav a {
+    color: #2e475d;
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
+   
+  }
+  /* //burger  */
+  .navburgur {
+    display: none;
+    cursor: pointer;
+  }
+  .navburgur div {
+    width: 25px;
+    height: 3px;
+    background-color: #2e475d;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* //media quary */
+  
+  @media screen and (max-width: 1023px) {
+    .nav{
+        padding: 0.2rem 2rem;
+    }
+    .navrow nav {
+      display: none;
+      top: -333px;
+    }
+    .navrow {
+      margin-top: -16rem;
+      padding-bottom: 2rem;
+    }
+    .navburgur {
+      display: block;
+      height: 2rem;
+      margin-top: 6px;
+    }
+    .toggle .navrow {
+      margin-top: 0rem;
+      transition: all 0.6s ease;
+    }
+    .toggle nav {
+      display: block;
+    }
+    .toggle .navlogo {
+      display: block;
+    }
+    .toggle .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .toggle nav li {
+      display: flex;
+      padding-top: 3rem;
+      align-items: self-start;
+      flex-direction: column;
+      align-items: center;
+    }
+    .toggle nav a {
+      border-bottom: solid 1px #bdbdbd;
+      /* margin: 0.5rem; */
+      padding: 0.4rem 0rem;
+    }
+  }
+ 
