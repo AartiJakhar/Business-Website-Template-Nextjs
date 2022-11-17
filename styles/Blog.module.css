@@ -1,0 +1,18 @@
+.container{
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0rem 6rem;
+
+}
+.top{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.4rem;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

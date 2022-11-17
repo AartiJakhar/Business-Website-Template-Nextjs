@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar";
 import styles from '../styles/Home.module.css'
 import { useState } from "react";
 import Homeitem from "../components/Homeitem"; 
 import About from "./components/About";
+import Blogs from './components/Blogs';
 
 
 export default function Home() {
@@ -85,11 +85,12 @@ export default function Home() {
             {data.map((element) => {
                return   <Homeitem key={element.id} title={element.title} description={element.description} logo={element.logo}/>
               })}
-              </div>;
+              </div>
           </div>
           {/* <About/> */}
         </div>
       </section>
+      <Blogs/>
       <About/>
     </>
   )

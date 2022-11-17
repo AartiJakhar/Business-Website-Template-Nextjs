@@ -45,7 +45,7 @@ export default function Navbar() {
                   <li>
                     <a href="/">Home</a>
                     <a href="/components/About">About</a>
-                    <a href="/services">Services</a>
+                    <a href="/components/Blogs">Blogs</a>
                     <a href="/team">Team</a>
                     <a href="/">ContactUs</a>
                   </li>
