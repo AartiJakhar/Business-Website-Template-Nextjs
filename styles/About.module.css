@@ -1,0 +1,40 @@
+.Row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.Row img{
+    width: 100%;
+}
+.Row .box{
+    padding-left: 2rem;
+}
+.Row .box h2{
+    font-size: 3rem;
+}
+.Row .box h3{
+    font-size: 2rem;
+    padding: 1.4rem 0rem;
+}
+.Row .box p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+.Row .btn {
+    color: rgb(0, 13, 70);
+    text-decoration: none;
+    padding:  .5rem;
+    margin-top: 2rem;
+    font-weight: 900;
+    border: solid rgb(255, 70, 29);
+    background: none;
+}
+@media screen and (max-width:1023px){
+    .Row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

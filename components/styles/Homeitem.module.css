@@ -1,0 +1,25 @@
+.card{
+    /* border: solid red; */
+    text-align: center;
+    width: 18rem;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    box-shadow: 0px 15px 20px rgb(0 0 0 / 20%)
+}
+.card h2{
+    /* font-size: 2rem; */
+    margin: 1rem 0rem;
+}
+.card p{
+    line-height: 2rem;
+}
+.fa{
+    border:  dashed #ff4d1c;
+    padding: 1rem;
+    color: #ff4d1c;
+    border-radius: 4px;
+}
+.toggle{
+    border-radius: 2rem;
+    transition:all ease .3s
+}

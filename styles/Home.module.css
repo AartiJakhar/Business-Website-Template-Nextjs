@@ -1,129 +1,136 @@
-.container {
-  padding: 0 2rem;
-}
+/* //for top container  */
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.Topcontainer{
+  background: url('https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/hero.jpg') center/cover  no-repeat ;
+  height: 33rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  top: 0;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.mainrow{
+  width: 30rem;
+  color: white;
+  box-sizing: border-box;
+  margin-left: 6.2rem;
 }
-
-.title a {
-  color: #0070f3;
+.mainrow h1{
+  width: 29rem;
+  font-size: 3.3rem;
+}
+.mainrow h3{
+  color: rgb(255, 70, 29);
+  
+}
+.mainrow p{
+  margin: 1rem 0rem;
+}
+.mainrow .btn{
+  color: white;
   text-decoration: none;
+  padding:  .5rem ;
+  margin-top: 2rem;
+  font-weight: 700;
+  border: solid rgb(255, 70, 29);
+}
+.mainrow .fa{
+  background-color: rgb(255, 70, 29);
+  padding: .71rem;
+  color: white;
+}
+.mainrow .fa:hover{
+  color: black;
+  transition: all ease .2s;
+}
+.mainrow .btn:hover{
+  background-color: rgb(255, 70, 29);
+  transition: all ease .3s;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
 
-.title,
-.description {
-  text-align: center;
-}
+/* section for container  */
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.row{
+  /* border: solid black; */
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: space-around;
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
+.leftBox{
+  width: 30%;
+  margin: 7rem 0rem;
+}
+.leftBox p{
   text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  margin: 2rem 0rem;
+  line-height: 1.5rem;
+}
+.leftBox h2{
+  font-size: 3rem;
+  color: rgb(31, 31, 31);
+}
+.rightBox{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
+@media screen and (max-width:1023px) {
+  .Topcontainer{
+      background: url('https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/hero.jpg') center/cover  no-repeat ;
+      height: 28rem;
+      display: flex;
+      align-items: center;
+      top: 0;
+  }
+  .mainrow{
+      margin-left: 5rem;
+      width: 15rem;
+  }
+ 
+      .mainrow h1{
+          width: 27rem;
+  font-size: 3rem;
+      
+  }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  /* for container  */
+  .row{
+      flex-direction: column;
+      align-items: center;
+      padding: 0rem 4rem;
+  }
+  .leftBox{
+      width: 100%;
+      margin: 1rem 0rem;
+      
+  }
+  .rightBox{
+      width: 100%;
+      justify-content: space-around;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+@media screen and (max-width:770px) {
+  .Topcontainer{
+      background: url('https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/hero.jpg') center/cover  no-repeat ;
+      height: 25rem;
+      display: flex;
+      align-items: center;
+      top: 0;
   }
-  .code {
-    background: #111;
+  .mainrow{
+      margin-left: 1rem;
+      width: 15rem;
   }
-  .logo img {
-    filter: invert(1);
+ 
+      .mainrow h1{
+          width: 15rem;
+          font-size: 2rem;
+      
   }
 }

@@ -1,4 +1,5 @@
 import React ,{useState}from 'react'
+// import Link from "next/link";
 import styles from '../../styles/Navbar.module.css'
 export default function Navbar() {
     const [dropdownToggled, setdropdownToggle] = useState(false);
@@ -14,7 +15,6 @@ export default function Navbar() {
 
       if (typeof window !== "undefined") {
         window.onclick = function (event) {
-            console.log(event)
             console.log(event.target.matches('#droptn'))
             if (!event.target.matches('#dropbtn')) {
                 var dropdowns = document.getElementsByClassName(styles.nav);
@@ -35,7 +35,7 @@ export default function Navbar() {
    
    <div className={`${styles.nav} ${dropdownToggled? styles.toggle:""}`} >
             <div>
-              <a href="/" className={styles.navlogo} >
+              <a href="/components/About" className={styles.navlogo} >
                 BLOG-VLOG
               </a>
             </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
                 <ul>
                   <li>
                     <a href="/">Home</a>
-                    <a href="/about">About</a>
+                    <a href="/components/About">About</a>
                     <a href="/services">Services</a>
                     <a href="/team">Team</a>
                     <a href="/">ContactUs</a>
