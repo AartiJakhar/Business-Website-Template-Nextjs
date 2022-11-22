@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "../../styles/About.module.css"
 function About() {
   return (
-    <div>
+    <div id='about'>
            <div className={styles.container}>
       <div className={styles.Row}>
         <div className={styles.img}>

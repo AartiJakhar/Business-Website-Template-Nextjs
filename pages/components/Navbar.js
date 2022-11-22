@@ -43,11 +43,10 @@ export default function Navbar() {
               <nav>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
-                    <a href="/components/About">About</a>
-                    <a href="/components/Blogs">Blogs</a>
-                    <a href="/team">Team</a>
-                    <a href="/">ContactUs</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#blogs">Blogs</a>
+                    <a href="#team">Team</a>
                   </li>
                 </ul>
               </nav>

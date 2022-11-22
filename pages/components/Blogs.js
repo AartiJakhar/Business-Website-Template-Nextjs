@@ -3,8 +3,8 @@ import Blogitem from '../../components/Blogitem'
 import styles from '../../styles/Blog.module.css'
 function Blogs() {
   return (
-    <div>
-        <div className={styles.container}>
+    <div id="blogs">
+        <div className={styles.container} >
             <div className={styles.top}>
         <h2>Our Blog</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolores! Iure perspiciatis, minus modi ratione est maiores. Perferendis, porro aperiam.</p>

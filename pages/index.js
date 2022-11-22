@@ -38,7 +38,7 @@ export default function Home() {
   const [data, setData] = useState(blogs);
   return (
     <>
-     <header>
+     <header id='home'>
         <div className={styles.Topcontainer}>
           <div>
             <div className={styles.mainrow}>
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section>
+      <section id='team'>
         <div className={styles.Container}>
           <div className={styles.row}>
             <div className={styles.leftBox}>
