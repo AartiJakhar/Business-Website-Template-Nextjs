@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Blogitem from '../Blogitem'
 import styles from '../../styles/Blog.module.css'
 import listContext from '../../context/ListContext'
-function Blogs() {
+export default function Blogs() {
   const context = useContext(listContext)
   const {loading,blogs}=context 
   return (
@@ -23,5 +23,3 @@ function Blogs() {
     </div>
   )
 }
-
-export default Blogs

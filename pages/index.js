@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
-import Blogs from './components/page/Blogs';
 import Team from '../components/page/Team';
 import About from '../components/page/About';
+import Blogs from '../components/page/Blogs';
 
 export default function Home() {
 
@@ -21,7 +21,7 @@ export default function Home() {
               <a className={styles.btn}  href="#about">
                 More About →
               </a>
-              <a href="#0">
+              <a href="#">
                 <i className={`fa fa-play ${styles.fa}`}></i>
               </a>
             </div>

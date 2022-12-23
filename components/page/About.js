@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../../styles/About.module.css"
 //changing the file name's first letter to small to solve  build  problem
-function About() {
+export default function About() {
   return (
     <div id='about'>
            <div className={styles.container}>
@@ -22,5 +22,3 @@ function About() {
     </div>
   )
 }
-
-export default About
