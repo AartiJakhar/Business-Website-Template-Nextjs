@@ -49,7 +49,7 @@ export default function Home() {
                 vel aut animi quam ducimus consequatur voluptas delectus,
                 sapiente.
               </p>
-              <a className={styles.btn}  href="/">
+              <a className={styles.btn}  href="#about">
                 More About →
               </a>
               <a href="#0">

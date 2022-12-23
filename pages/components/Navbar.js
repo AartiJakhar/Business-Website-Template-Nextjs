@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React ,{useState}from 'react'
 // import Link from "next/link";
 import styles from '../../styles/Navbar.module.css'
@@ -35,9 +36,9 @@ export default function Navbar() {
    
    <div className={`${styles.nav} ${dropdownToggled? styles.toggle:""}`} >
             <div>
-              <a href="/components/About" className={styles.navlogo} >
+              <Link href="/" className={styles.navlogo} >
                 BLOG-VLOG
-              </a>
+              </Link>
             </div>
             <div className={styles.navrow}>
               <nav>
