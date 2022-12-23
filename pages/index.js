@@ -1,13 +1,9 @@
 import styles from '../styles/Home.module.css'
-import { useState,useContext } from "react";
-import About from "./components/about";
 import Blogs from './components/blogs';
-import listContext from '../context/ListContext'
-import Team from './components/team';
+import Team from '../components/page/Team';
+import About from '../components/page/About';
 
 export default function Home() {
-  const context = useContext(listContext)
-  const {loading,data}=context 
 
   return (
     <>
