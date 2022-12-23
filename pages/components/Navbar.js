@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import React ,{useState}from 'react'
-// import Link from "next/link";
 import styles from '../../styles/Navbar.module.css'
+import {useRouter} from 'next/router';
 export default function Navbar() {
+  const router = useRouter();
+ const {pathname}=router;
+ 
     const [dropdownToggled, setdropdownToggle] = useState(false);
     const navSlide = () => {
         if(!dropdownToggled){
@@ -41,6 +44,7 @@ export default function Navbar() {
               </Link>
             </div>
             <div className={styles.navrow}>
+            {pathname=== "/" ? 
               <nav>
                 <ul>
                   <li>
@@ -50,7 +54,19 @@ export default function Navbar() {
                     <a href="#team">Team</a>
                   </li>
                 </ul>
-              </nav>
+              </nav>:
+
+               <nav>
+               <ul>
+                 <li>
+                   <Link href="/">Home</Link>
+                   <Link href="/components/about">About</Link>
+                   <Link href="/components/blogs">Blogs</Link>
+                   <Link href="/components/team">Team</Link>
+                 </li>
+               </ul>
+             </nav>
+              }
             </div>
             <div className={styles.navburgur} id="dropbtn" onMouseOver={navSlide} >
               <div className={styles.line1}></div>
