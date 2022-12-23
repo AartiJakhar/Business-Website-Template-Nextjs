@@ -88,7 +88,8 @@ const router=useRouter()
     const [data, setdata] = useState(datas)
   
 const getblog=async(slug)=>{
-  router.push(`http://localhost:3000/blog/${slug}`)
+  
+  router.push(`/blog/${slug}`)
   const newData= blogs.filter((value)=>{return value.slug === slug})
   setgetBlog(newData)
   console.log(blogs)
