@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import Homeitem from '../../components/Homeitem'
 import listContext from '../../context/ListContext'
 import styles from '../../styles/Home.module.css'
+import Teamitem from '../Teamitem'
 export default function Team() {
     const context = useContext(listContext)
     const {data}=context 
@@ -30,7 +30,7 @@ export default function Team() {
         </div>
         <div className={styles.rightBox} >
         {data.map((element) => {
-           return   <Homeitem key={element.id} title={element.title} description={element.description} logo={element.logo}/>
+           return   <Teamitem key={element.id} title={element.title} description={element.description} logo={element.logo}/>
           })}
           </div>
       </div>

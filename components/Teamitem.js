@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './styles/Homeitem.module.css'
 
-function Homeitem(props) {
+function Teamitem(props) {
   const [cardtoggle, setcardtoggle] = useState(false)
     const cardHover = ()=>{
       setcardtoggle(true);
@@ -18,4 +18,4 @@ function Homeitem(props) {
   )
 }
 
-export default Homeitem
+export default Teamitem

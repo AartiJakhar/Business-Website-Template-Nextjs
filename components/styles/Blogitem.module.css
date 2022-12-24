@@ -41,6 +41,9 @@
     border: none;
     padding: .5rem 1rem;
     background-color: rgb(38, 38, 38);
+    color: white !important;
+    cursor: pointer;
+
 }
 .postFooter {
     display: flex;

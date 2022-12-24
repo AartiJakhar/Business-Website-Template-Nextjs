@@ -8,7 +8,7 @@ export default function About() {
            <div className={styles.container}>
       <div className={styles.Row}>
         <div className={styles.img}>
-          <img src="https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/about.png" alt="" width={500} height={333} />
+          <img src="https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/about.png" alt="" />
         
         </div>
         <div className={styles.box}>

@@ -8,17 +8,18 @@ export default function Navbar() {
  const {pathname}=router;
  
     const [dropdownToggled, setdropdownToggle] = useState(false);
-    const navSlide = () => {
-        if(!dropdownToggled){
-           setdropdownToggle(true);
-        console.log('first')
-       }
-      };
+    const navToggle=()=>{
+      if(dropdownToggled){
+        setdropdownToggle(false)
+      }else{
+        setdropdownToggle(true)
+      }
+    }
+    
 
       if (typeof window !== "undefined") {
         window.onclick = function (event) {
-            console.log(event.target.matches('#droptn'))
-            if (!event.target.matches('#dropbtn')) {
+            if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName(styles.nav);
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
@@ -38,8 +39,6 @@ export default function Navbar() {
    <div className={`${styles.nav} ${dropdownToggled? styles.toggle:""}`} >
             <div>
               <Link href="/"  >
-              {/* <Image src='/logopng.png' width={200} height={200} style={{position:'absolute',top:'-65px'}} alt="icon"></Image> */}
-              {/* <Image src='/logo.svg' width={200} height={30} alt="icon"></Image> */}
               <Image src='/aarti.png' width={350} height={50} className={styles.navlogo}  alt="icon"></Image>
               </Link>
             </div>
@@ -68,10 +67,10 @@ export default function Navbar() {
              </nav>
               }
             </div>
-            <div className={styles.navburgur} id="dropbtn" onMouseOver={navSlide} >
-              <div className={styles.line1}></div>
-              <div className={styles.line2}></div>
-              <div className={styles.line3}></div>
+            <div className={`${styles.navburgur} dropbtn`}   onClick={navToggle}  >
+              <div className={`dropbtn ${styles.line1}`} onClick={navToggle}></div>
+              <div className={`dropbtn ${styles.line2}`} onClick={navToggle}></div>
+              <div className={`dropbtn ${styles.line3}`} onClick={navToggle}></div>
             </div>
           </div>
 

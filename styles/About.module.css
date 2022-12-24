@@ -26,10 +26,10 @@
     color: rgb(0, 13, 70);
     text-decoration: none;
     padding:  .5rem;
-    margin-top: 2rem;
     font-weight: 900;
     border: solid rgb(255, 70, 29);
     background: none;
+    cursor: pointer;
 }
 @media screen and (max-width:1023px){
     .Row .box{

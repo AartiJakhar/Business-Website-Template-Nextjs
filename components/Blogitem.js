@@ -14,7 +14,8 @@ function Blogitem({element}) {
         <div className={styles.postItem}>
             <h2>{element.title}</h2>
             <p>{element.description.length>100 ? element.description.slice(0,100):element.description}</p>
-            <button className={styles.postBtn} onClick={()=>{getblog(element.slug)}}>Read More <i className={`${styles.fa} fa fa-long-arrow-right`}></i></button>
+            <button className={` ${styles.postBtn} cursor-pointer `}onClick={()=>{getblog(element.slug)}}>Read More <i className={`${styles.fa} fa fa-long-arrow-right`}></i></button>
+           
         </div>
         <div className={styles.postFooter}>
             <li>
