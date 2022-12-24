@@ -16,3 +16,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+@media screen and (max-width:1023px){
+    .top{
+      width: 100%;
+    }
+}
