@@ -23,7 +23,7 @@ export default function Blog() {
         getBlog.map((e) => {
           return  <div key={e.id}>
       <div  className={styles.view}>
-      <Link className={styles.backArrow} href="/components/blogs"  >&larr;</Link>
+      <Link className={styles.backArrow} href="/routes/blogs"  >&larr;</Link>
         <h1>{e.title}</h1>
         <div className={styles.publishBox}>
             <div className={styles.publisher}>

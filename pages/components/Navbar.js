@@ -60,8 +60,8 @@ export default function Navbar() {
                <ul>
                  <li>
                    <Link href="/">Home</Link>
-                   <Link href="/components/about">About</Link>
-                   <Link href="/components/blogs">Blogs</Link>
+                   <Link href="/routes/about">About</Link>
+                   <Link href="/routes/blogs">Blogs</Link>
                    <Link href="/components/team">Team</Link>
                  </li>
                </ul>
