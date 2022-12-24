@@ -1,7 +1,7 @@
 import '../styles/globals.css'
-import Navbar from './components/Navbar'
 import Script from 'next/script'
 import ListState from '../context/ListState'
+import Navbar from '../components/Navbar'
  
   
 function MyApp({ Component, pageProps }) {

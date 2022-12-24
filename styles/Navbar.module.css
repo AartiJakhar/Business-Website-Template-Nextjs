@@ -11,13 +11,11 @@
   }
   /* navlog0 css */
   .navlogo {
-    text-decoration: none;
-    color: #2e475d;
-    font-style: oblique;
-    text-transform: capitalize;
-    letter-spacing: 5px;
-    font-size: 1.6rem;
-  }
+    position: absolute;
+    top: 8px;
+    width:170px !important ;
+    height:50px !important ;
+    }
  .navrow nav ul {
     margin: 0;
     padding: 0;
@@ -57,8 +55,9 @@
   /* //media quary */
   
   @media screen and (max-width: 1023px) {
+  
     .nav{
-        padding: 0.2rem 2rem;
+        padding: 0.rem 2rem;
     }
     .navrow nav {
       display: none;
@@ -99,5 +98,16 @@
       /* margin: 0.5rem; */
       padding: 0.4rem 0rem;
     }
+  }
+ /* //media quary */
+  
+  @media screen and (max-width: 723px) {
+    .navlogo {
+      position: absolute;
+      top: 8px;
+      width:200px !important ;
+      height:50px !important ;
+      }
+   
   }
  

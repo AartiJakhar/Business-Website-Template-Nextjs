@@ -28,9 +28,9 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <Team/>
-      <Blogs/>
       <About/>
+      <Blogs/>
+      <Team/>
     </>
   )
 }

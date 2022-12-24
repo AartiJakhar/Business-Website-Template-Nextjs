@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import React ,{useState}from 'react'
-import styles from '../../styles/Navbar.module.css'
+import styles from '../styles/Navbar.module.css'
 import {useRouter} from 'next/router';
+import Image from 'next/image';
 export default function Navbar() {
   const router = useRouter();
  const {pathname}=router;
@@ -12,9 +13,6 @@ export default function Navbar() {
            setdropdownToggle(true);
         console.log('first')
        }
-    //    else{
-    //     setdropdownToggle(false)
-    //    }
       };
 
       if (typeof window !== "undefined") {
@@ -39,8 +37,10 @@ export default function Navbar() {
    
    <div className={`${styles.nav} ${dropdownToggled? styles.toggle:""}`} >
             <div>
-              <Link href="/" className={styles.navlogo} >
-                BLOG-VLOG
+              <Link href="/"  >
+              {/* <Image src='/logopng.png' width={200} height={200} style={{position:'absolute',top:'-65px'}} alt="icon"></Image> */}
+              {/* <Image src='/logo.svg' width={200} height={30} alt="icon"></Image> */}
+              <Image src='/aarti.png' width={350} height={50} className={styles.navlogo}  alt="icon"></Image>
               </Link>
             </div>
             <div className={styles.navrow}>
@@ -62,7 +62,7 @@ export default function Navbar() {
                    <Link href="/">Home</Link>
                    <Link href="/routes/about">About</Link>
                    <Link href="/routes/blogs">Blogs</Link>
-                   <Link href="/components/team">Team</Link>
+                   <Link href="/routes/team">Team</Link>
                  </li>
                </ul>
              </nav>

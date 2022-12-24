@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import styles from "../../styles/About.module.css"
 //changing the file name's first letter to small to solve  build  problem
@@ -7,7 +8,7 @@ export default function About() {
            <div className={styles.container}>
       <div className={styles.Row}>
         <div className={styles.img}>
-          <img src="https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/about.png" alt="" />
+          <img src="https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/about.png" alt="" width={500} height={333} />
         
         </div>
         <div className={styles.box}>
