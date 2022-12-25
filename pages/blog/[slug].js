@@ -4,6 +4,9 @@ import React, { useContext, useEffect } from "react";
 import listContext from "../../context/ListContext";
 import styles  from  '../../styles/ViewBlog.module.css'
 export default function Blog() {
+  function createMarkup(c) {
+    return {__html: c};
+  }
   const context = useContext(listContext);
   const { getBlog, getblog } = context;
   const router = useRouter();
@@ -38,11 +41,12 @@ export default function Blog() {
         {e.description}
         </p>
         <img src={e.ImageUrl} alt="img"/>
-       <p>{e.content}</p>
-        <a href="#">Grow Your Business With HubSpffot&apos;s Tools for WordPress Websites</a>
+       {<div dangerouslySetInnerHTML={createMarkup(e.content)}></div>}
+        {/* <a href="#">Grow Your Business With HubSpffot&apos;s Tools for WordPress Websites</a>
         <p>
         To help you get started with your forum framework, we’ve compiled a list of the 12 best WordPress forum themes and WordPress forum-compatible themes for you to choose from. Let’s go.
         </p>
+     */}
         </div>
       </div>
     </div>
