@@ -1,13 +1,16 @@
 .card{
-    /* border: solid red; */
     text-align: center;
     width: 18rem;
     padding: 1rem;
     margin: 1rem 0rem;
-    box-shadow: 0px 15px 20px rgb(0 0 0 / 20%)
+    box-shadow: 0px 15px 20px rgb(0 0 0 / 20%);
+    transition: 0.8s;
 }
+.card:hover{
+    transform: scale(1.1) rotate(0deg);
+    transition: 0.8s;
+    }
 .card h2{
-    /* font-size: 2rem; */
     margin: 1rem 0rem;
 }
 .card p{
