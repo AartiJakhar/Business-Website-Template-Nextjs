@@ -7,8 +7,8 @@ function Blogitem({element}) {
   return (
     <div className={styles.card}>
         <div className={styles.postImage}>
-        <div className={styles.postDate}>18<span>may</span></div>
-        <img src="https://demo.gecdesigns.com/demo/webs/creative-business-website-template-130819/img/hero-03.jpg" alt=""/>
+        <div className={styles.postDate}>{element.date && element.date.slice(0,2)}<span>Dec</span></div>
+        <img src={element.ImageUrl} alt=""/>
         
         </div>
         <div className={styles.postItem}>

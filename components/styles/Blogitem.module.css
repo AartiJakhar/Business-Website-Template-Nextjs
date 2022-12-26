@@ -9,6 +9,7 @@
     width: 22rem;
     display: flex;
     flex-direction: row-reverse;
+    overflow: hidden;
 }
 .postImage .postDate{
     display: flex;
@@ -24,8 +25,15 @@
     font-size: .6rem;
 }
 .postImage img{
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    transition: 0.8s
 }
+ .postImage img:hover {
+    transform: scale(2) rotate(0deg);
+    transition: 0.8s;
+    }
 .postItem {
     width: 20rem;
     text-align: start;
@@ -44,6 +52,9 @@
     color: white !important;
     cursor: pointer;
 
+}
+.postBtn:hover{
+    background-color: rgb(0, 0, 0) !important;
 }
 .postFooter {
     display: flex;
